@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guessing game</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="playeronecontainer">
+        <p>Player One</p>
+        <input class="playeroneinput" type="text" placeholder="pick a number between 1 and 10">
+        <p class="playeroneerror">number must not be greater than 10 and cannot be empty!!!</p>
+        <button class="playeronebutton">Choose number</button>
+        <button class="playeroneshowbutton">show number</button>
+
+        <div class="confirmationbox">
+            <p>Are you sure??</p>
+            <button class="yes">Yes</button>
+            <button  class="no">No</button>
+
+        </div>
+    </div>
+    
+    <div class="playertwocontainer">
+        <p>Player Two</p>
+        <p>Chances left:<span class="chancesleft">3</span></p>
+        <input class="playertwoinput" type="number" placeholder="guess player one number">
+        <button class="playertwobutton">Choose number</button>
+        <p>Numbers picked : <span class="numberspicked"></span></p>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
